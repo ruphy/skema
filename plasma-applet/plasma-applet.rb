@@ -1,5 +1,5 @@
 template :slug => nil,
-         :name => nil,
+         :website => nil,
          :title => nil,
          :description => nil,
          :version => "0.1",

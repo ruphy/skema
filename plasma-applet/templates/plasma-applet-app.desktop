@@ -1,7 +1,6 @@
-<% filename "plasma-applet-#{@slug}.desktop" %>
-[Desktop Entry]
+<% filename "plasma-applet-#{@slug}.desktop" %>[Desktop Entry]
 Encoding=UTF-8
-Name=<%= @name %>
+Name=<%= @tile %>
 Comment=<%= @comment %>
 Type=Service
 ServiceTypes=Plasma/Applet
@@ -11,7 +10,7 @@ X-KDE-PluginInfo-Author=<%= @author %>
 X-KDE-PluginInfo-Email=<%= @email %>
 X-KDE-PluginInfo-Name=plasma_applet_<%= @slug %>
 X-KDE-PluginInfo-Version=<%= @version %>
-X-KDE-PluginInfo-Website=http://plasma.kde.org/
+X-KDE-PluginInfo-Website=<%= @website %>
 X-KDE-PluginInfo-Category=
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=GPL
