@@ -7,7 +7,7 @@
 #include <plasma/svg.h>
 #include <plasma/theme.h>
  
-<%= @slug.uppercase %>::<%= @slug.uppercase %>(QObject *parent, const QVariantList &args)
+<%= @slug.capitalize %>::<%= @slug.capitalize %>(QObject *parent, const QVariantList &args)
     : Plasma::Applet(parent, args),
     m_svg("widgets/background", this),
     m_icon("plasma")
@@ -18,7 +18,7 @@
 }
  
  
-<%= @slug.uppercase %>::~<%= @slug.uppercase %>()
+<%= @slug.capitalize %>::~<%= @slug.capitalize %>()
 {
     if (failedToLaunch()) {
         // Do some cleanup here
@@ -27,7 +27,7 @@
     }
 }
  
-void <%= @slug.uppercase %>::init()
+void <%= @slug.capitalize %>::init()
 {
     m_svg.setContentType(Plasma::Svg::SingleImage);
  
@@ -39,7 +39,7 @@ void <%= @slug.uppercase %>::init()
 } 
  
  
-void <%= @slug.uppercase %>::paintInterface(QPainter *p,
+void <%= @slug.capitalize %>::paintInterface(QPainter *p,
         const QStyleOptionGraphicsItem *option, const QRect &contentsRect)
 {
     p->setRenderHint(QPainter::SmoothPixmapTransform);

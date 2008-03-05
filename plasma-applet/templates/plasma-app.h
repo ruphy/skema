@@ -1,6 +1,6 @@
 <% filename "#{@slug}.h" %> // Here we avoid loading the header multiple times
-#ifndef <%= @slug.uppercase %>_HEADER
-#define <%= @slug.uppercase %>_HEADER
+#ifndef <%= @slug.upcase %>_HEADER
+#define <%= @slug.upcase %>_HEADER
 // We need the Plasma Applet headers
 #include <KIcon>
  
@@ -15,8 +15,8 @@ class <%= @slug.capitalize %> : public Plasma::Applet
     Q_OBJECT
     public:
         // Basic Create/Destroy
-        <%= slug.capitalize %>(QObject *parent, const QVariantList &args);
-        ~<%= slug.capitalize %>();
+        <%=  @slug.capitalize %>(QObject *parent, const QVariantList &args);
+        ~<%= @slug.capitalize %>();
  
         // The paintInterface procedure paints the applet to screen
         void paintInterface(QPainter *painter,
