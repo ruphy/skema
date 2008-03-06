@@ -116,7 +116,7 @@ $ skema class . class:Test
 
 h2. How to submit patches
 
-Fork "my repository":http://github.com/pcapriotti/skema/ at "github":http://github.com.
+Fork "my repository":http://github.com/pcapriotti/skema/ at "github":http://github.com and send pull requests. =)
 
 h2. License
 
