@@ -14,6 +14,11 @@ lib/modules/kapp/templates/appui.rc
 lib/modules/kapp/templates/main.cpp
 lib/modules/lgpl/lgpl.rb
 lib/modules/lgpl/templates/file
+lib/modules/plasma-applet/plasma-applet.rb
+lib/modules/plasma-applet/templates/CMakeLists.txt
+lib/modules/plasma-applet/templates/plasma-app.cpp
+lib/modules/plasma-applet/templates/plasma-app.h
+lib/modules/plasma-applet/templates/plasma-applet-app.desktop
 lib/modules/skemaconfig/skemaconfig.rb
 lib/modules/skemaconfig/templates/skemarc
 lib/skema.rb
