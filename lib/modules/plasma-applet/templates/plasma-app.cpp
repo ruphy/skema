@@ -9,18 +9,18 @@
  
 <%= @slug.capitalize %>::<%= @slug.capitalize %>(QObject *parent, const QVariantList &args)
     : Plasma::Applet(parent, args),
-    m_svg("widgets/background", this),
+    m_svg(this),
     m_icon("plasma")
 {
     // this will get us the standard applet background, for free!
-    setDrawStandardBackground(true);
+    setBackgroundHints(Plasma::Applet::StandardBackground);
     resize(200, 200);
 }
  
  
 <%= @slug.capitalize %>::~<%= @slug.capitalize %>()
 {
-    if (failedToLaunch()) {
+    if (hasFailedToLaunch()) {
         // Do some cleanup here
     } else {
         // Save settings
@@ -29,9 +29,6 @@
  
 void <%= @slug.capitalize %>::init()
 {
-    m_svg.setContentType(Plasma::Svg::SingleImage);
- 
-  
     // A small demonstration of the setFailedToLaunch function
     if (m_icon.isNull()) {
         setFailedToLaunch(true, "No world to say hello");

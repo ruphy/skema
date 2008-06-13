@@ -30,5 +30,5 @@ class <%= @slug.capitalize %> : public Plasma::Applet
 };
  
 // This is the command that links your applet to the .desktop file
-K_EXPORT_PLASMA_APPLET(<%= @slug %>, PlasmaTutorial1)
+K_EXPORT_PLASMA_APPLET(<%= @slug %>, <%= @slug.capitalize %>)
 #endif
