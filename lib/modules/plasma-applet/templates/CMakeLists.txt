@@ -18,7 +18,7 @@ include_directories(
 set(<%= @slug %>_SRCS <%= @slug %>.cpp)
  
 # Now make sure all files get to the right place
-kde4_add_plugin(plasma_applet_<%= @slug %> ${tutorial1_SRCS})
+kde4_add_plugin(plasma_applet_<%= @slug %> ${<%= @slug %>_SRCS})
 target_link_libraries(plasma_applet_<%= @slug %> 
                       ${PLASMA_LIBS} ${KDE4_KDEUI_LIBS})
  
